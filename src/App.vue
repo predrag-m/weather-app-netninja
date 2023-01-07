@@ -4,7 +4,7 @@ import TheNavbar from "@/components/TheNavbar.vue";
 </script>
 
 <template>
-  <div class="">
+  <div class="bg-weather-primary min-h-screen flex flex-col font-Roboto">
     <the-navbar />
     <router-view />
   </div>

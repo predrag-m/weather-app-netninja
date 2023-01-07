@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SearchCity from "@/components/SearchCity.vue";
+</script>
 
 <template>
-  <main>
-    <p>Home View</p>
+  <main class="container text-white">
+    <search-city />
   </main>
 </template>
+
+<style scoped></style>
