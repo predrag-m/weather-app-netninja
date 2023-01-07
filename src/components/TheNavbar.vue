@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useModalsStore } from "@/stores/ModalsStore";
 import BaseModal from "./BaseModal.vue";
+
+const modalsStore = useModalsStore();
 </script>
 
 <template>
@@ -18,6 +21,7 @@ import BaseModal from "./BaseModal.vue";
       <!-- info & save city -->
       <div class="flex justify-end flex-1 gap-3">
         <i
+          @click="modalsStore.openModal"
           class="fa-solid fa-circle-info text-xl hover:text-weather-secondary duration-150 cursor-pointer"
         ></i>
         <i
